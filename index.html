@@ -18,19 +18,19 @@
                 <div class="choice">
                     <div>
                         <label for="vert">Vert :</label>
-                        <input type="number" name="vert" id="vert" />
+                        <input type="number" name="vert" id="vert" v-model="green" />
                     </div>
                     <div>
                         <label for="bleu">Bleu :</label>
-                        <input type="number" name="bleu" id="bleu" />
+                        <input type="number" name="bleu" id="bleu" v-model="blue" />
                     </div>
                     <div>
                         <label for="rouge">Rouge : </label>
-                        <input type="number" name="rouge" id="rouge" />
+                        <input type="number" name="rouge" id="rouge" v-model="red" />
                     </div>
                     <div class="save">
-                        <button>Sauvegarder</button>
-                        <button>Annuler</button>
+                        <button @click="saveSquare()">Sauvegarder</button>
+                        <button @click="reset()">Annuler</button>
                     </div>
                 </div>
                 <div>
@@ -49,9 +49,18 @@
         new Vue({
             el: '#app',
             data: {
+                green: 0,
+                blue: 0,
+                red: 0,
+                squares: []
             },
             methods: {
+                saveSquare(){
+                    
+                },
+                reset(){
 
+                }
             },
             computed: {
 
