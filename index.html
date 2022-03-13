@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue</title>
     <script type="text/javascript" src="./node_modules/vue/dist/vue.js"></script>
+    <script src="app.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -38,6 +39,9 @@
                 </div>
                 <div class="colors">
                     <span>Ajouter une couleur !</span>
+                    <div class="colors-card">
+                        <div class="color"></div>
+                    </div>
                 </div>
             </div>
             <div>
@@ -46,26 +50,7 @@
         </div>
     </div>
     <script type="text/javascript">
-        new Vue({
-            el: '#app',
-            data: {
-                green: 0,
-                blue: 0,
-                red: 0,
-                squares: []
-            },
-            methods: {
-                saveSquare(){
-                    
-                },
-                reset(){
-
-                }
-            },
-            computed: {
-
-            }
-        })
+        
     </script>
 </body>
 
