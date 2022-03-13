@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue</title>
+    <script type="text/javascript" src="./node_modules/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app" class="container">
+        <h1>Color Picker</h1>
+        <div class="content">
+            <div class="left">
+                <div class="choice">
+                    <div>
+                        <label for="vert">Vert :</label>
+                        <input type="number" name="vert" id="vert" />
+                    </div>
+                    <div>
+                        <label for="bleu">Bleu :</label>
+                        <input type="number" name="bleu" id="bleu" />
+                    </div>
+                    <div>
+                        <label for="rouge">Rouge : </label>
+                        <input type="number" name="rouge" id="rouge" />
+                    </div>
+                    <div class="save">
+                        <button>Sauvegarder</button>
+                        <button>Annuler</button>
+                    </div>
+                </div>
+                <div>
+                    <h3>Nombre de carres : <span>0</span></h3>
+                </div>
+                <div class="colors">
+                    <span>Ajouter une couleur !</span>
+                </div>
+            </div>
+            <div>
+                <div class="square"></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+            },
+            methods: {
+
+            },
+            computed: {
+
+            }
+        })
+    </script>
+</body>
+
+</html>
