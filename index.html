@@ -35,17 +35,19 @@
                     </div>
                 </div>
                 <div>
-                    <h3>Nombre de carres : <span>0</span></h3>
+                    <h3>Nombre de carres : <span> 
+                    {{ nbrOfSquare }}
+                    </span></h3>
                 </div>
                 <div class="colors">
-                    <span>Ajouter une couleur !</span>
-                    <div class="colors-card">
-                        <div class="color"></div>
+                    <div class="colors-card" v-if="squares.length">
+                        <div class="color" v-for="square in squares" v-bind:style="{ backgroundColor: square }" @click="selectedSquare = square"></div>
                     </div>
+                    <span v-else>Ajouter une couleur !</span>
                 </div>
             </div>
             <div>
-                <div class="square"></div>
+                <div class="square" v-bind:style="{ backgroundColor: selectedSquare }"></div>
             </div>
         </div>
     </div>
